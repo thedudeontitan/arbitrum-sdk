@@ -432,7 +432,7 @@ export const getNetwork = async (
   } else {
     network = getArbitrumChains()[chainID]
   }
-
+  console.log(network)
   if (!network) {
     throw new ArbSdkError(`Unrecognized network ${chainID}.`)
   }
